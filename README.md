@@ -7,7 +7,7 @@ To get the frontend running locally: http://localhost:3000/#/launch/programs/
 	<li>npm install to install all req'd dependencies</li>
 	<li>npm start to start the local server (this project uses create-react-app)</li>
 <li>Local web server will use port 3000. You can configure port in scripts section of package.json: we use cross-env to set environment variable PORT for React scripts, this is Windows-compatible way of setting environment variables.</li>
-
+</ul>
 
 # Making requests to the  API
 For convenience, we have a API running at https://api.spaceXdata.com/v3/launches?limit=100 for the application to make requests against. We can fetch all the list items using axios from this api
