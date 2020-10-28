@@ -1,0 +1,5 @@
+export const SET_LOADING = "SET_LOADING";
+export const SET_OPENCV_LOADING = "SET_OPENCV_LOADING";
+export const SET_BRFV_LOADING = "SET_BRFV_LOADING";
+export const SET_TF_LOADING = "SET_TF_LOADING";
+
