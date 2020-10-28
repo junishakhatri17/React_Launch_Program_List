@@ -5,7 +5,7 @@ To get the frontend running locally: http://localhost:3000/#/launch/programs/
 <ul>
 <li>Clone this repo </li>
 	<li>npm install to install all req'd dependencies</li>
-	<li>npm start to start the local server (this project uses create-react-app)</li>
+	<li>npm start to start the local server (this project uses create-react-app)- npm run start</li>
 <li>Local web server will use port 3000. You can configure port in scripts section of package.json: we use cross-env to set environment variable PORT for React scripts, this is Windows-compatible way of setting environment variables.</li>
 </ul>
 
