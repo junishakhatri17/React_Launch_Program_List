@@ -24,6 +24,7 @@ General functionality:
 	<li>Fetching list on page load</li>
 	<li>Filters can be applied on basis of launch year, launch success and landing success</li>
 	<li>Server side rendering is implemented using express server, webpack, babel</li>
+	<li>Responsive design for mobile, table and desktop</li>
 </ul>
 
 # Screenshot attached
