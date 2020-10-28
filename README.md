@@ -1,12 +1,13 @@
 # React_Launch_Program_List
 # Getting started
 
-To get the frontend running locally: http://localhost:3000/#/launch/programs/
+To get the frontend running locally: http://localhost:3000/#/launch/programs/ 
 <ul>
 <li>Clone this repo </li>
 	<li>npm install to install all req'd dependencies</li>
 	<li>npm start to start the local server (this project uses create-react-app)- npm run start</li>
 <li>Local web server will use port 3000. You can configure port in scripts section of package.json: we use cross-env to set environment variable PORT for React scripts, this is Windows-compatible way of setting environment variables.</li>
+	<li> npm install -g serve to start the server</li>
 </ul>
 
 # Making requests to the  API
@@ -25,6 +26,7 @@ General functionality:
 	<li>Filters can be applied on basis of launch year, launch success and landing success</li>
 	<li>Server side rendering is implemented using express server, webpack, babel</li>
 	<li>Responsive design for mobile, table and desktop</li>
+	<li>Server side rendering is implemented to fetch the list</li>
 </ul>
 
 # Screenshot attached
