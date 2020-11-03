@@ -32,4 +32,6 @@ General functionality:
 # Screenshot attached
 <img width="905" alt="screenshot_3" src="https://user-images.githubusercontent.com/13212465/98029449-80ec4580-1e35-11eb-93c7-f25dfe1ddb99.PNG">
 
+<img width="887" alt="screenshot_1" src="https://user-images.githubusercontent.com/13212465/98029702-f35d2580-1e35-11eb-92a3-cf7905b94fda.PNG">
+
 
