@@ -35,5 +35,7 @@ General functionality:
 <img width="887" alt="screenshot_1" src="https://user-images.githubusercontent.com/13212465/98029702-f35d2580-1e35-11eb-92a3-cf7905b94fda.PNG">
 
 <img width="895" alt="screenshot_4" src="https://user-images.githubusercontent.com/13212465/98030050-6ebed700-1e36-11eb-9dc2-09fcdc46d733.PNG">
+<img width="320" alt="screenshot_5" src="https://user-images.githubusercontent.com/13212465/98031882-294fd900-1e39-11eb-80d3-09865dc2f533.PNG">
+
 
 
