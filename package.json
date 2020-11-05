@@ -31,8 +31,7 @@
     "eject": "react-scripts eject",
     "dev:start": "webpack-dev-server --mode development --open --hot --port 3000",
     "dev:build-server": "webpack --mode production",
-    "dev": "npm-run-all --parallel build dev:*",
-    "heroku-postbuild": "npm run build"
+    "dev": "npm-run-all --parallel build dev:*"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -61,5 +60,8 @@
     "webpack": "^4.42.0",
     "webpack-cli": "^3.3.12",
     "webpack-node-externals": "^1.7.2"
+  },
+  "engines": {
+    "node": "12.x"
   }
 }
