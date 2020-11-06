@@ -3,7 +3,6 @@ import { compose } from "redux";
 import "./../list.css";
 import { connect } from "react-redux";
 import { useDispatch } from 'react-redux';
-import image from './images/img1.png';
 import { userListActions } from '../store/action/projectListAction';
 
 const initialList = [];
@@ -31,7 +30,7 @@ const ProjectListView = ({ projectList }) => {
                 >
                   <div className="card-body">
                 <div style={{textAlign: 'center', backgroundColor: '#e2e0e0'}}>
-                    <img className="banner responsive" alt="launch-logo"src={image}/>
+                    <img className="banner responsive" alt="launch-logo"src={project.links.mission_patch_small}/>
                 </div>
                   <h3 style={{color: '#4b4bd0'}}>{project.mission_name} #{project.flight_number}</h3>
                     <p>
