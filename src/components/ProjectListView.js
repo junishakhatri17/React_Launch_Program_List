@@ -1,0 +1,63 @@
+import React, { useState, memo ,useEffect} from "react";
+import { compose } from "redux";
+import "./../list.css";
+import { connect } from "react-redux";
+import { useDispatch } from 'react-redux';
+import image from './images/img1.png';
+import { userListActions } from '../store/action/projectListAction';
+
+const initialList = [];
+
+const ProjectListView = ({ projectList }) => {
+  const dispatch = useDispatch();
+  const [list, setList] = useState(initialList);
+
+  useEffect(() => {
+    // eslint-disable-next-line
+    dispatch(userListActions.GetProjectDetails());
+    // eslint-disable-next-line
+   }, []);
+
+   useEffect(() => {
+    setList(projectList);
+  }, [projectList]);
+
+  return (
+    <>      
+        <div className="listviewCont column right">
+            {list.length >= 0 && list.map((project, index) => (
+                <div
+                  className="card" key={index} style={{marginBottom: '20px'}}
+                >
+                  <div className="card-body">
+                <div style={{textAlign: 'center', backgroundColor: '#e2e0e0'}}>
+                    <img className="banner responsive" alt="launch-logo"src={image}/>
+                </div>
+                  <h3 style={{color: '#4b4bd0'}}>{project.mission_name} #{project.flight_number}</h3>
+                    <p>
+                    <b>Mission Ids: </b>  <span style={{color: '#4b4bd0'}}> {project.mission_id.length >= 0 && project.mission_id.map((item, index) => (
+                     <li key={index}>{project.mission_id}</li>
+                     ))}</span>
+                    </p>
+                    <p><b>Launch Year: </b> <span style={{color: '#4b4bd0'}}>{project.launch_year}</span></p>
+                    <p><b>Successful Launch: </b><span style={{color: '#4b4bd0'}}>{JSON.stringify(project.launch_success)}</span></p>
+                    <p><b>Successful Landing: </b><span style={{color: '#4b4bd0'}}>{project.rocket.first_stage.cores.land_success}</span></p>
+                  </div>
+                </div>
+            ))}
+          </div>
+     
+    </>
+  );
+};
+
+const mapStateToProps = (state) => ({
+  projectList: state.GetProjectList.projectList
+});
+
+const withConnect = connect(mapStateToProps);
+
+export default compose(
+  withConnect,
+  memo
+)(ProjectListView);
