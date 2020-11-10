@@ -44,7 +44,7 @@ const ProjectListView = ({ projectList }) => {
                   </div>
                 </div>
             ))}
-            {list.length == 0 ? <div style={{textAlign:'center',marginTop: '215px'}}><h1>No Space X launch program Found</h1></div> : ""}
+            {list.length === 0 ? <div style={{textAlign:'center',marginTop: '215px'}}><h1>No Space X launch program Found</h1></div> : ""}
           </div>
      
     </>
