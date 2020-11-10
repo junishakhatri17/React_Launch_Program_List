@@ -40,10 +40,11 @@ const ProjectListView = ({ projectList }) => {
                     </p>
                     <p><b>Launch Year: </b> <span style={{color: '#4b4bd0'}}>{project.launch_year}</span></p>
                     <p><b>Successful Launch: </b><span style={{color: '#4b4bd0'}}>{JSON.stringify(project.launch_success)}</span></p>
-                    <p><b>Successful Landing: </b><span style={{color: '#4b4bd0'}}>{project.rocket.first_stage.cores.land_success}</span></p>
+                   <p><b>Successful Landing: </b><span style={{color: '#4b4bd0'}}>{JSON.stringify(project.rocket.first_stage.cores[0].land_success)}</span></p>
                   </div>
                 </div>
             ))}
+            {list.length == 0 ? <div style={{textAlign:'center',marginTop: '215px'}}><h1>No Space X launch program Found</h1></div> : ""}
           </div>
      
     </>
